@@ -26,7 +26,8 @@
             <h1 style="float: right;font-size: 3.2em;padding: 0px;margin-bottom: 0px">Happy Devil
                 <h5 style="float: right;padding: 0px;margin-top: 5px">
                     <p class="game-intro">Join the faces and get to the <strong> <img src="img/12.png"
-                                                                                      style="width: 20px;height: 20px;"> happy
+                                                                                      style="width: 20px;height: 20px;">
+                        happy
                         devil</strong></p>
                 </h5>
             </h1>
@@ -140,10 +141,13 @@
 
 
     </div>
-    <div class="scores-container">
+
+
+    <div class="scores-container" style="clear: both">
         <div class="score-container" style="border-right: 2px #9a9a9a dashed;">0</div>
         <div class="best-container">0</div>
     </div>
+
     <div class="game-container">
         <div class="game-message">
             <p></p>
@@ -187,6 +191,8 @@
 
 
     <hr>
+    <div class="fb-share-button" data-href="http://dewmal.github.io/happy-devil/" data-width="100px"
+         data-type="button_count"></div>
     <p>
         Created by <a href="http://github.com/dewmal" target="_blank">Dewmal.</a> Based on <a
             href="http://gabrielecirulli.com" target="_blank">2048 by Gabriele Cirulli.</a>
@@ -201,5 +207,48 @@
 <script src="js/local_score_manager.js"></script>
 <script src="js/game_manager.js"></script>
 <script src="js/application.js"></script>
+
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '714303645281077',
+            status: true,
+            xfbml: true
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+    function share() {
+        FB.ui(
+                {
+                    method: 'feed',
+                    name: 'Happy devil',
+                    caption: 'Poor devil want to laugh',
+                    description: (
+                            'Simple funny game'
+                            ),
+                    link: 'http://dewmal.github.io/happy-devil/',
+                    picture: 'http://dewmal.github.io/happy-devil/img/12.png'
+                },
+                function (response) {
+
+                }
+        );
+    }
+</script>
+
+
 </body>
 </html>
