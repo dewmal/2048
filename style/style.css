@@ -1,11 +1,13 @@
-.show-link{
+.show-link {
     color: #ff0000;
     padding: 0px;
 }
-.game-help .close-link{
+
+.game-help .close-link {
     color: #ff0000;
     padding: 0px;
 }
+
 .help-row {
     padding-top: 5px;
     float: left;
@@ -17,8 +19,16 @@
     width: 50px;
     height: 50px;
 }
-.help-row h1{
+
+.help-row h1 {
     font-size: .9em;
     float: left;
     padding: 5px;
+}
+
+.grid-cell-img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
 }

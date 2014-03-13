@@ -56,57 +56,57 @@ HTMLActuator.prototype.addTile = function (tile) {
     switch (tile.value) {
         case 2:
         {
-            element.innerHTML = "<img src='./img/2.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/2.png' class='grid-cell-img'>";
         }
             break;
         case 4:
         {
-            element.innerHTML = "<img src='./img/3.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/3.png' class='grid-cell-img'>";
         }
             break;
         case 8:
         {
-            element.innerHTML = "<img src='./img/4.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/4.png' class='grid-cell-img'>";
         }
             break;
         case 16:
         {
-            element.innerHTML = "<img src='./img/5.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/5.png' class='grid-cell-img'>";
         }
             break;
         case 32:
         {
-            element.innerHTML = "<img src='./img/6.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/6.png' class='grid-cell-img'>";
         }
             break;
         case 64:
         {
-            element.innerHTML = "<img src='./img/7.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/7.png' class='grid-cell-img'>";
         }
             break;
         case 128:
         {
-            element.innerHTML = "<img src='./img/8.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/8.png' class='grid-cell-img'>";
         }
             break;
         case 256:
         {
-            element.innerHTML = "<img src='./img/9.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/9.png' class='grid-cell-img'>";
         }
             break;
         case 512:
         {
-            element.innerHTML = "<img src='./img/10.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/10.png' class='grid-cell-img'>";
         }
             break;
         case 1024:
         {
-            element.innerHTML = "<img src='./img/11.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/11.png' class='grid-cell-img'>";
         }
             break;
         case 2048:
         {
-            element.innerHTML = "<img src='./img/12.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/12.png' class='grid-cell-img'>";
         }
             break;
 
