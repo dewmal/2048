@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
     <meta charset="utf-8">
     <title>Happy devil</title>
-    <meta property="og:image" content="img/12.png" />
+    <meta property="og:image" content="img/12.png"/>
     <link href="style/main.css" rel="stylesheet" type="text/css">
     <link href="style/style.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
@@ -191,8 +191,18 @@
 
 
     <hr>
-    <div class="fb-share-button" onclick="share()" data-width="100px"
-         data-type="button_count"></div>
+    <fb:share-button href="https://developers.facebook.com/docs/plugins/" type="button_count">
+
+
+        <meta name="title" content="Happy devil" />
+
+        <meta name="description" content="Poor devil want to laugh" />
+
+        <link rel="image_src" href="http://dewmal.github.io/happy-devil/img/12.png" />
+
+        <link rel="target_url" href="http://dewmal.github.io/happy-devil/"/>
+
+    </fb:share-button>
     <p>
         Created by <a href="http://github.com/dewmal" target="_blank">Dewmal.</a> Based on <a
             href="http://gabrielecirulli.com" target="_blank">2048 by Gabriele Cirulli.</a>
@@ -209,45 +219,53 @@
 <script src="js/application.js"></script>
 
 <div id="fb-root"></div>
-<script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '714303645281077',
-            status: true,
-            xfbml: true
-        });
-    };
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=714303645281077";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--<script>-->
+<!--window.fbAsyncInit = function () {-->
+<!--FB.init({-->
+<!--appId: '714303645281077',-->
+<!--status: true,-->
+<!--xfbml: true-->
+<!--});-->
+<!--};-->
 
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+<!--(function (d, s, id) {-->
+<!--var js, fjs = d.getElementsByTagName(s)[0];-->
+<!--if (d.getElementById(id)) {-->
+<!--return;-->
+<!--}-->
+<!--js = d.createElement(s);-->
+<!--js.id = id;-->
+<!--js.src = "//connect.facebook.net/en_US/all.js";-->
+<!--fjs.parentNode.insertBefore(js, fjs);-->
+<!--}(document, 'script', 'facebook-jssdk'));-->
 
 
-    function share() {
-        FB.ui(
-                {
-                    method: 'feed',
-                    name: 'Happy devil',
-                    caption: 'Poor devil want to laugh',
-                    description: (
-                            'Simple funny game'
-                            ),
-                    link: 'http://dewmal.github.io/happy-devil/',
-                    picture: 'http://dewmal.github.io/happy-devil/img/12.png'
-                },
-                function (response) {
+<!--function share() {-->
+<!--FB.ui(-->
+<!--{-->
+<!--method: 'feed',-->
+<!--name: 'Happy devil',-->
+<!--caption: 'Poor devil want to laugh',-->
+<!--description: (-->
+<!--'Simple funny game'-->
+<!--),-->
+<!--link: 'http://dewmal.github.io/happy-devil/',-->
+<!--picture: 'http://dewmal.github.io/happy-devil/img/12.png'-->
+<!--},-->
+<!--function (response) {-->
 
-                }
-        );
-    }
-</script>
+<!--}-->
+<!--);-->
+<!--}-->
+<!--</script>-->
 
 
 </body>
