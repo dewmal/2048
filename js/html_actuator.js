@@ -91,7 +91,7 @@ HTMLActuator.prototype.addTile = function (tile) {
             break;
         case 256:
         {
-            element.innerHTML = "<img src='./img/12.png' style='width: 100px;height: 100px;'>";
+            element.innerHTML = "<img src='./img/9.png' style='width: 100px;height: 100px;'>";
         }
             break;
         case 512:
