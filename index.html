@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Happy devil</title>
-
+    <meta property="og:image" content="img/12.png" />
     <link href="style/main.css" rel="stylesheet" type="text/css">
     <link href="style/style.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
@@ -191,7 +191,7 @@
 
 
     <hr>
-    <div class="fb-share-button" onclick="share()" data-width="100px"
+    <div class="fb-share-button" data-href="http://dewmal.github.io/happy-devil/" data-width="100px"
          data-type="button_count"></div>
     <p>
         Created by <a href="http://github.com/dewmal" target="_blank">Dewmal.</a> Based on <a
@@ -231,41 +231,21 @@
 
 
     function share() {
-
         FB.ui(
                 {
                     method: 'feed',
-                    name: 'Facebook Dialogs',
-                    link: 'https://developers.facebook.com/docs/dialogs/',
-                    picture: 'http://fbrell.com/f8.jpg',
-                    caption: 'Reference Documentation',
-                    description: 'Dialogs provide a simple, consistent interface for applications to interface with users.'
+                    name: 'Happy devil',
+                    caption: 'Poor devil want to laugh',
+                    description: (
+                            'Simple funny game'
+                            ),
+                    link: 'http://dewmal.github.io/happy-devil/',
+                    picture: 'http://dewmal.github.io/happy-devil/img/12.png'
                 },
-                function(response) {
-                    if (response && response.post_id) {
-                        alert('Post was published.');
-                    } else {
-                        alert('Post was not published.');
-                    }
+                function (response) {
+
                 }
         );
-
-
-//        FB.ui(
-//                {
-//                    method: 'feed',
-//                    name: 'Happy devil',
-//                    caption: 'Poor devil want to laugh',
-//                    description: (
-//                            'Simple funny game'
-//                            ),
-//                    link: 'http://dewmal.github.io/happy-devil/',
-//                    picture: 'http://dewmal.github.io/happy-devil/img/12.png'
-//                },
-//                function (response) {
-//
-//                }
-//        );
     }
 </script>
 
